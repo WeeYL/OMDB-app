@@ -20,7 +20,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
 }
 
@@ -28,11 +27,46 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.movie-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  background-color: #7d8085;
+
+}
+
+.row{
+  display: flex;
+}
+
+.poster{
+  max-width: 60%;
+  max-height: 60%;
+}
+
+.movieTitle{
+  font-size: 24px;
+  color: black;
+  text-align: center;
+  white-space: nowrap; 
+  width: 300px; 
+  overflow: hidden;
+  text-overflow: ellipsis; 
+
+}
+
+.webHeader{
+  display:flex;
+  justify-content: space-between;
+  align-items:center;
+}
+.searchBar{
+  margin-right: 12px;
+}
+
+.vl {
+  border-left: 1px solid rgb(160, 159, 159);
+
+  height: 500px;
 }
